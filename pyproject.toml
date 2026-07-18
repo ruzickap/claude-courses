@@ -12,3 +12,8 @@ dependencies = [
 
 [tool.uv]
 package = false
+
+[tool.mypy]
+# anthropic and python-dotenv ship no type stubs and are not installed in the
+# MegaLinter image, so nbqa/mypy cannot resolve them.
+ignore_missing_imports = true
