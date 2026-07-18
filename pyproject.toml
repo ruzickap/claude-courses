@@ -1,0 +1,14 @@
+[project]
+name = "claude-courses"
+version = "0.0.0"
+description = "Claude Courses Notes"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+  "anthropic",
+  "ipykernel",
+  "python-dotenv",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,18 @@
+{
+  // Claude Courses Notes - Python 3.14 + uv dev container
+  "name": "claude-courses",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/va-h/devcontainers-features/uv:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    }
+  },
+  "postCreateCommand": "uv sync",
+  "remoteUser": "vscode"
+}
