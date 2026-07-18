@@ -1,0 +1,11 @@
+# Python virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+
+# Python bytecode cache
+__pycache__/
+
+# Local developer pre-commit config (personal symlink, not repo-managed)
+.pre-commit-config.yaml

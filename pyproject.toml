@@ -1,0 +1,19 @@
+[project]
+name = "claude-courses"
+version = "0.0.0"
+description = "Claude Courses Notes"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+  "anthropic",
+  "ipykernel",
+  "python-dotenv",
+]
+
+[tool.uv]
+package = false
+
+[tool.mypy]
+# anthropic and python-dotenv ship no type stubs and are not installed in the
+# MegaLinter image, so nbqa/mypy cannot resolve them.
+ignore_missing_imports = true
