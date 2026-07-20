@@ -4,7 +4,10 @@
 
 # Exclude files from scanning
 exclude = [
-  "CHANGELOG.md"
+  "CHANGELOG.md",
+  # Verbatim course exercise input data; must stay byte-stable for the
+  # character-based chunking notebook, so prose style rules do not apply.
+  "claude-certified-architect-foundations/building-with-the-claude-api/report.md"
 ]
 
 # MD013: Line length - https://github.com/rvben/rumdl/blob/main/docs/md013.md
