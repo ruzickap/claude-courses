@@ -1,3 +1,5 @@
+<!-- rumdl-disable-file -->
+
 # **Annual Interdisciplinary Research Review: Cross-Domain Insights**
 
 ## Executive Summary
